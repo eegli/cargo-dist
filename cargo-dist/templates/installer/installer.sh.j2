@@ -92,7 +92,7 @@ is_windows_posix() {
     esac
 }
 
-# Convert POSIX path to Windows path for receipt on Windows POSIX shells
+# Convert POSIX path to Windows path
 convert_path_for_receipt() {
     local _path="$1"
     if is_windows_posix && command -v cygpath > /dev/null 2>&1; then
